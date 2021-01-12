@@ -1,0 +1,1 @@
+SELECT DISTINCT artists.name FROM tracks INNER JOIN genres ON genres.genreid = tracks.genreid JOIN albums ON tracks.albumid=albums.albumid JOIN artists ON albums.artistid=artists.artistid WHERE genres.name= 'Latin'
